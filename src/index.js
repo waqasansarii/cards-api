@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import CardsProvider from './CardsProvider';
 
 ReactDOM.render(
   <React.StrictMode>
+    <CardsProvider>
     <App />
+    </CardsProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
